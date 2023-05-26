@@ -1,0 +1,39 @@
+.container{
+    display: grid;
+    grid-template-rows: 16fr 1fr;
+    height: 100vh;
+}
+
+.messages-space{
+    overflow-y: auto;
+}
+
+.message-container {
+    margin-top: 15px;
+
+    .my-message {
+        margin-left: 60vw;
+        height: 60px;
+        width: 200px;
+        color: black;
+        background-color: yellow;
+    }
+    
+    .others-message{
+        margin-left: 5vw;
+        height: 60px;
+        width: 200px;
+        background-color: red;
+        color: #000000;
+    }
+}
+
+input{
+    width: 65vw;
+    height: 60px;
+}
+
+button {
+    width: 9vw;
+    height: 60px;
+}

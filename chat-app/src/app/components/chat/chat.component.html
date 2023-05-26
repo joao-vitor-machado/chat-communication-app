@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="messages-space">
+        <div class="message-container" *ngFor="let message of messages">
+            <div *ngIf="message.from == 'me';else otherMessage">
+                <div class="my-message">{{message.message}}</div>
+            </div>
+            <ng-template #otherMessage>
+                <div class="others-message">{{message.message}}</div>
+            </ng-template>
+        </div>
+    </div>
+    
+    <form action="">
+        <input type="text-area">
+        <button type="submit">Send</button>
+    </form>
+</div>

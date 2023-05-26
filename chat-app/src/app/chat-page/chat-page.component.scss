@@ -1,0 +1,31 @@
+.conversation-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100vh;
+}
+
+.conversation-title {
+    height: 10vh;
+    background-color: grey;
+
+    h3{
+        margin-left: 3vw;
+        padding-top: 2vh;
+    }
+
+}
+
+.conversation{
+}
+
+.message-sender {
+    position: fixed;
+    bottom: 0;
+    width: 75vw;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+    input{
+        height: 40px;
+    }
+}
